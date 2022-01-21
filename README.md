@@ -1,4 +1,4 @@
-# 弃用的博客
+# Morecho - Jekyll
 
 仓库下载于[MuZhou233](https://github.com/MuZhou233)
 
