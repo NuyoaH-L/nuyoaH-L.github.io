@@ -31,10 +31,13 @@ layout: default
         </div>
     </a>
     <div class="post-meta">
-        <div class="title"><i class="fas fa-edit"></i> {% if post.author %}{{ post.author }}{% else %}{{ site.owner.name }}{% endif %}</div>
-        <div class="title"><i class="fas fa-calendar"></i> {{ post.date | date: "%Y年%m月%d日" }}</div>
-        <br>
-        <div class="title"><i class="fas fa-file-word"></i>{{ post.content | strip_html | strip_newlines | remove: " " | size }} 字</div>
+        <div class="title">
+          <i class="fas fa-edit"></i> {% if post.author %}{{ post.author }}{% else %}{{ site.owner.name }}{% endif %}
+          <i class="fas fa-calendar"></i> {{ post.date | date: "%Y年%m月%d日" }}
+        </div>
+        <div class="title">
+          <i class="fas fa-file-word"></i>{{ post.content | strip_html | strip_newlines | remove: " " | size }} 字
+        </div>
     </div>
 </div>
 {% endif %}{% endfor %}
