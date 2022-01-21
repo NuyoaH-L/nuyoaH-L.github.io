@@ -13,8 +13,8 @@ owner:
     bio: '孤灯不明思欲绝，卷帱望月空长叹。'
 
 # Data
-avatar: /asserts/img/logo.png
-favicon: /asserts/img/logo.png
+avatar: https://q1.qlogo.cn/g?b=qq&nk=1634297622&s=640
+favicon: https://q1.qlogo.cn/g?b=qq&nk=1634297622&s=640
 music:
     title: 音乐标题
     url: 音乐路径或链接
