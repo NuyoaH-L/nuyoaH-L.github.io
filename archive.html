@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<!-- 
-Credits: this page borrowed a lot from:
-https://github.com/kitian616/jekyll-TeXt-theme
--->
-
 <div id='tag_cloud' class="tags js-tags">
     <a class="tag-button--all" data-encode="">
         Show All
         <sup>{{site.posts.size}}</sup>
     </a>
-
     {% capture tags %}
     {% for tag in site.tags %}
     <a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}"
@@ -25,14 +19,11 @@ https://github.com/kitian616/jekyll-TeXt-theme
     {{ tags | split:'</a>' | sort | join:'</a>' }}
     </a>
 </div>
-
 <div class="archive timeline">
     <div class="js-result d-none">
         {%- assign _sorted_list = site.posts -%}
         {%- assign _sorted_list = _sorted_list | sort: 'date' -%}
         {%- assign _sorted_list = _sorted_list | reverse -%}
-
-
         {%- for _article in _sorted_list -%}
             {%- assign _tags = '' -%}
             {%- for _tag in _article.tags -%}
@@ -43,7 +34,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
                     {%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
                 {%- endif -%}
             {%- endfor -%}
-
             {% comment %} group by year {% endcomment %}
             {%- assign _currentdate = _article.date | date: '%Y年%m月' -%}
             {%- if _currentdate != _date -%}
@@ -56,7 +46,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
                 </div>
                 {%- assign _date = _currentdate -%}
             {%- endif -%}
-
             <div class="post-preview item tl-item" data-tags="{{ _tags }}">
                 <div class="tl-date">{{ _article.date | date: "%d日" }}</div>
                 <div class="tl-body">
@@ -81,7 +70,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
         <div class="tl-title bg-white" style="color: #777;">BEGIN</div>
     </div>
 </div>
-
 <style>
     .archive{
         padding: 1rem;
