@@ -7,15 +7,12 @@ layout: default
       {% if page.title %}<h4>{{ page.title }}</h4>{% endif %}
       {% if page.subtitle %}<p class="title">{{ page.subtitle }}</p>{% endif %}
       <div class="title">
-      <span>
-         <i class="fas fa-calendar"></i>{{ page.date | date: "%Y年%m月%d日" }}
-         <br>
-         <i class="fas fa-file-word"></i>{{ page.content | strip_html | strip_newlines | remove: " " | size }}字
-         <br>
-         <i class="fas fa-clock"></i>{{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 250 | plus: 1 }}分
-         <br>
-         <i class="fas fa-eye"></i><span id="busuanzi_value_page_pv"><i data-feater="loader"></i></span>次
-      </span>
+        <span>
+          <i class="fas fa-calendar"></i>{{ page.date | date: "%Y年%m月%d日" }}
+          <i class="fas fa-file-word"></i>{{ page.content | strip_html | strip_newlines | remove: " " | size }}字
+          <i class="fas fa-clock"></i>{{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 250 | plus: 1 }}分
+          <i class="fas fa-eye"></i><span id="busuanzi_value_page_pv"><i data-feater="loader"></i></span>次
+        </span>
       </div>
   </div>
   <br/>
