@@ -1,19 +1,42 @@
+<!--Jquery 3.4.1-->
 <script src="https://cdnjs.webstatic.cn/ajax/libs/jquery/3.4.1/jquery.js" 
     integrity="sha512-sJa5KWq3F99QOeijUOm9O+BgDgVtzrWBBagZtjlW7F3I47NO1OaNJvbut+9KOPmjNr4Wb3blU4vQiQdi+Zk6wg==" 
     crossorigin="anonymous"></script>
+
+<!--POpperJS-->
 <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<!--Bootstrap-->
 <script src="https://cdnjs.webstatic.cn/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js" 
     integrity="sha512-z9SE9KBPrRUdqvatMVDdTEF4SJIrKYPA5/Q1JBgQGOfOczbtLwHSbHRoScFvc0XzDQUdXRqu9jwKi19jMtDsQw==" 
     crossorigin="anonymous"></script>
+
+<!--Feather-Icons-->
 <script src="https://cdnjs.webstatic.cn/ajax/libs/feather-icons/4.9.0/feather.min.js" 
     integrity="sha512-wDf6/iK+iu9N1zNvdOsL5/66HyMla4UHOkPkRYacvv9mSAD1S86XfrAvDFTX9S1FUzbwe9YOI11yOGALE8jQow==" 
     crossorigin="anonymous"></script>
 <script>
     feather.replace()
 </script>
+
+<!--Highlight-->
 <script src="https://cdnjs.webstatic.cn/ajax/libs/highlight.js/9.18.1/highlight.min.js" 
     integrity="sha512-1LdB3V708w6G4QRl7NsVdTr7MDibyRXr9stQZ+EGjEE0ZPMZkA//ir7kCWmFyxdAJNIRXdR/ZeJmCV0boyiCXw==" 
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.webstatic.cn/ajax/libs/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.js" 
     integrity="sha512-w3VWbjfZT2epbo0XhTu3aalOEqmPir9kpCKjI8WeI9VPcSm6H+IaZS+jyNvLvs5OgV57B1x15abHKE66guKkGQ==" 
     crossorigin="anonymous"></script>
+
+<!--搜索-->
+<script src="{{ '/asserts/js/simple-jekyll-search.min.js' | prepend: site.baseurl }}"></script>
+<script>
+  SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/asserts/json/search.json',
+      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+      noResultsText: '什么都没有呢',
+      limit: 20,
+      fuzzy: false
+    })
+</script>
