@@ -1,25 +1,23 @@
 title: 沐雨橙舟の秘密基地
-email: muzhou233@outlook.com
+email: nuyoah-l@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
-keyword: 'MuZhou, MuZhou Blog, OIer, noip'
+    孤灯不明思欲绝，卷帱望月空长叹
+keyword: 'NuyoaH-L, NuyoaH-L Blog, OIer, noip'
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://mosarin.tech' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://nuyoah-l.gdata.fun/' # the base hostname & protocol for your site, e.g. http://example.com
 
 # About/contact
 owner:
-    name: '沐雨橙舟'
-    email: 'MuZhou233@outlook.com'
-    bio: ''
+    name: 'NuyoaH-L'
+    email: 'nuyoah-l@outlook.com'
+    bio: '孤灯不明思欲绝，卷帱望月空长叹'
 
 # Data
 avatar: /asserts/img/avatar.jpg
 favicon: /favicon.jpg
 music:
-    title: なつめ千秋,GUMI - センチメンタルな愛慕心
-    url: /asserts/lib/plyr/test.mp3
+    title: Eye Water - itsuwari
+    url: https://music.163.com/song/media/outer/url?id=1351784375.mp3
 
 # Build settings
 # use Github Flavored Markdown !important
@@ -51,3 +49,12 @@ timezone: Asia/Shanghai
 
 # Gems
 plugins: [jekyll-paginate]
+
+# Gitalk评论插件
+comments :
+  gitalk :
+    clientID : e9d00223edfe5ec618e5  # 获取到的clientID
+    clientSecret : d64483e565e51613fb12859774eea1d8a4193607  # 获取到的clientSecret
+    repo : pinglun  # 存放评论的仓库
+    owner : NuyoaH-L  #仓库的主人
+    admin : NuyoaH-L
